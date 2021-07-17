@@ -627,7 +627,7 @@ to { color:#003cff;}
 /* # Features */
 @media (max-width: 575px) {
   .features{
-  padding-left: 25px;
+  padding-left: 21px;
 }}
 .features .card {
   border-radius: 5px;
