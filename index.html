@@ -29,7 +29,8 @@
 
 </head>
 
-<body onload="myloader()">
+<!-- <body onload="myloader()"> -->
+<body>
   <div id="loader"></div>
   <div class="wrap">
 
@@ -481,15 +482,20 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8xOTk2GKZjOK5uK_xtR1yILBRAzC3Who&callback=initMap&libraries=&v=weekly"
     async
-  ></script>
+  >
+
+ $(document).ready(function($) {
+        $('#loader').css('display', 'none');
+ });
+</script>
   <!-- Template Main JS File -->
   <script src="main.js"></script>
-<script>
+<!-- <script>
     var preload=document.getElementById('loader');
     function myloader(){
       preload.style.display='none';
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
