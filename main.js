@@ -171,9 +171,9 @@ $('.carousel').carousel({
 (function($){
   'use strict';
     $(window).on('load', function () {
-        if ($(".pre-loader").length > 0)
+        if ($(".#loader").length > 0)
         {
-            $(".pre-loader").fadeOut("slow");
+            $(".#loader").fadeOut("slow");
         }
     });
 })(jQuery)
