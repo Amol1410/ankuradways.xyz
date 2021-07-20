@@ -29,7 +29,8 @@
 
 </head>
 
-<body>
+<body onload="myloader()">
+  <div id="loader"></div>
   <div class="wrap">
 
     <!-- ======= Hero Section ======= -->
@@ -483,7 +484,13 @@
   ></script>
   <!-- Template Main JS File -->
   <script src="main.js"></script>
-
+<script>
+  var preload = document.getElementById('loader');
+  
+  function myloader(){
+    preload.style.display = 'none';
+  }
+</script>
 </body>
 
 </html>
