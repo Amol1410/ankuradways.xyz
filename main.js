@@ -168,6 +168,15 @@ $('.carousel').carousel({
   interval: 6000,
   pause: "false"
 });
+(function($){
+  'use strict';
+    $(window).on('load', function () {
+        if ($(".pre-loader").length > 0)
+        {
+            $(".pre-loader").fadeOut("slow");
+        }
+    });
+})(jQuery)
 function initMap() {
   const uluru = { lat: 29.950060, lng: 77.546661 };
   const map = new google.maps.Map(document.getElementById("map"), {
